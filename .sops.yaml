@@ -1,0 +1,11 @@
+# pub keys
+keys:
+  - &users:
+    - &michael age1ucvns7uw3lh6x6lpe2uf0mrzflpfteanvtnhdf964avqhveswgvqu43zxj
+
+creation_rules:
+  #path should be relative to location of this file (.sops.yaml)
+  - path_regex: secrets.yaml$
+    key_groups:
+      - age:
+          - *michael
