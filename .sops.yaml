@@ -2,6 +2,8 @@
 keys:
   - &users:
     - &michael age1ucvns7uw3lh6x6lpe2uf0mrzflpfteanvtnhdf964avqhveswgvqu43zxj
+  - &hosts:
+    - &sephiroth age1e23vnw3ytplh2l59unqsm573g2dmrq83exyceaa7nz5nnl67dfyscz6sfa
 
 creation_rules:
   #path should be relative to location of this file (.sops.yaml)
@@ -9,3 +11,4 @@ creation_rules:
     key_groups:
       - age:
           - *michael
+          - *sephiroth
