@@ -4,7 +4,7 @@ keys:
     - &michael age1ucvns7uw3lh6x6lpe2uf0mrzflpfteanvtnhdf964avqhveswgvqu43zxj
   - &hosts:
     - &sephiroth age1e23vnw3ytplh2l59unqsm573g2dmrq83exyceaa7nz5nnl67dfyscz6sfa
-    - &bowser age19zzm0u3jmnj8r583rcr8p55guenpltjyr7nvavt7nreg0hqeua9sfwmwh3
+    - &bowser age1phef0a4aeqdzatjevln3asptphkkqnx644t9raryehqa59ts036sqe6xy7
 
 creation_rules:
   #path should be relative to location of this file (.sops.yaml)
