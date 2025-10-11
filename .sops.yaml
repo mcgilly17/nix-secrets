@@ -3,7 +3,6 @@ keys:
   - &dev age1w4zh3zu6xq94t6y9mjahh94h7wdv0k65yshwsmel97ywdw50qucq5pxk2f
   - &users:
     - &michael age18vflapckk4ueadtzplldm7955c8dkk92xsr03wdfwtexkju00pfskzxyur
-    - &old_michael age1ucvns7uw3lh6x6lpe2uf0mrzflpfteanvtnhdf964avqhveswgvqu43zxj
   - &hosts:
     - &rk1-node1 age1rs6mku5sq3equ0av04fs5jasszlappt5zsrs9p7r9jf9mzk23dkqxl0xfp
     - &rk1-node2 age1z7e64rq7s7ht8yv78vf2axjuyt8v9d4f882q0kdzdzayxj00vydsmltmpq
@@ -18,7 +17,6 @@ creation_rules:
       - age:
           - *dev
           - *michael
-          - *old_michael
           - *rk1-node1
           - *rk1-node2
           - *rk1-node3
