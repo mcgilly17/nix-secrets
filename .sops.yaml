@@ -1,16 +1,26 @@
 # pub keys
 keys:
+  - &dev age1w4zh3zu6xq94t6y9mjahh94h7wdv0k65yshwsmel97ywdw50qucq5pxk2f
   - &users:
-    - &michael age1ucvns7uw3lh6x6lpe2uf0mrzflpfteanvtnhdf964avqhveswgvqu43zxj
+    - &michael age18vflapckk4ueadtzplldm7955c8dkk92xsr03wdfwtexkju00pfskzxyur
+    - &old_michael age1ucvns7uw3lh6x6lpe2uf0mrzflpfteanvtnhdf964avqhveswgvqu43zxj
   - &hosts:
-    - &sephiroth age1e23vnw3ytplh2l59unqsm573g2dmrq83exyceaa7nz5nnl67dfyscz6sfa
-    - &bowser age1phef0a4aeqdzatjevln3asptphkkqnx644t9raryehqa59ts036sqe6xy7
+    - &rk1-node1 age1rs6mku5sq3equ0av04fs5jasszlappt5zsrs9p7r9jf9mzk23dkqxl0xfp
+    - &rk1-node2 age1z7e64rq7s7ht8yv78vf2axjuyt8v9d4f882q0kdzdzayxj00vydsmltmpq
+    - &rk1-node3 age1we9pwc6ujmwh0m4ngtqevleaj8lf6w3huhdnz32e9c967uf9qdhsmpsdxl
+    - &rk1-node4 age12cpmvtc0hmpfhz7ztrzstfz770qf5ss5jkyp7eqmfc04y7k8p4dqdhwpg2
+    - &ganon age1xsvgfxddra4t835n70qvrapwy04qgcs5ydsj2famc8shhymyf4kqkj0d0r
 
 creation_rules:
   #path should be relative to location of this file (.sops.yaml)
   - path_regex: secrets.yaml$
     key_groups:
       - age:
+          - *dev
           - *michael
-          - *sephiroth
-          - *bowser
+          - *old_michael
+          - *rk1-node1
+          - *rk1-node2
+          - *rk1-node3
+          - *rk1-node4
+          - *ganon
