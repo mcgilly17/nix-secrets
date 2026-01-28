@@ -4,10 +4,10 @@ keys:
   - &users:
     - &michael age18vflapckk4ueadtzplldm7955c8dkk92xsr03wdfwtexkju00pfskzxyur
   - &hosts:
-    - &rk1-node1 age1rs6mku5sq3equ0av04fs5jasszlappt5zsrs9p7r9jf9mzk23dkqxl0xfp
-    - &rk1-node2 age1z7e64rq7s7ht8yv78vf2axjuyt8v9d4f882q0kdzdzayxj00vydsmltmpq
-    - &rk1-node3 age1we9pwc6ujmwh0m4ngtqevleaj8lf6w3huhdnz32e9c967uf9qdhsmpsdxl
-    - &rk1-node4 age12cpmvtc0hmpfhz7ztrzstfz770qf5ss5jkyp7eqmfc04y7k8p4dqdhwpg2
+    - &sephiroth age1rs6mku5sq3equ0av04fs5jasszlappt5zsrs9p7r9jf9mzk23dkqxl0xfp
+    - &nova-1 age1z7e64rq7s7ht8yv78vf2axjuyt8v9d4f882q0kdzdzayxj00vydsmltmpq
+    - &nova-2 age1we9pwc6ujmwh0m4ngtqevleaj8lf6w3huhdnz32e9c967uf9qdhsmpsdxl
+    - &nova-3 age12cpmvtc0hmpfhz7ztrzstfz770qf5ss5jkyp7eqmfc04y7k8p4dqdhwpg2
     - &ganon age1xsvgfxddra4t835n70qvrapwy04qgcs5ydsj2famc8shhymyf4kqkj0d0r
 
 creation_rules:
@@ -17,8 +17,8 @@ creation_rules:
       - age:
           - *dev
           - *michael
-          - *rk1-node1
-          - *rk1-node2
-          - *rk1-node3
-          - *rk1-node4
+          - *sephiroth
+          - *nova-1
+          - *nova-2
+          - *nova-3
           - *ganon
