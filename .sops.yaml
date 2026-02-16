@@ -22,3 +22,10 @@ creation_rules:
           - *zenith-2
           - *zenith-3
           - *ganon
+  - path_regex: kubeconfig.yaml$
+    key_groups:
+      - age:
+          - *dev
+          - *michael
+          - *sephiroth
+          - *ganon
